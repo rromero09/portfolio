@@ -69,8 +69,8 @@ export const about = {
   title: "Who I Am",
   description: [
     "I'm a Computer Science student at Northeastern Illinois University, minoring in Data Science. My passion lies in backend development, data analysis, and cloud computing.",
-    "I have experience building REST APIs with Java (Spring Boot) and Python (Flask), designing databases (MongoDB, MySQL), and working with DevOps tools like Git and AWS. I also enjoy frontend development with React.",
-    "Outside of coding, I stay active with hiking, mountain biking, and playing beach volleyball at Foster Beach every Friday. If you see me, say hi! :D",
+    "I have experience building REST APIs with Java (Spring Boot) and Python (Flask) and designing databases (NoSQL and SQL). I also enjoy frontend development with React.",
+    "Outside of coding, I stay active with hiking, mountain biking, and playing beach volleyball at Foster Beach every Friday :D",
   ],
 };
 
@@ -80,12 +80,12 @@ export const projects = {
     {
       title: "Inventory Management System",
       description:
-        "An inventory tracking app for The Bakehouse Chicago, helping staff track missing items and streamline future orders. Built using Python, Flask, and Square API.",
+        "An inventory tracking app for The Bakehouse Chicago, helping staff track missing items and streamline future orders. Built with Notion.",
     },
     {
-      title: "Schedule Assistant API",
+      title: "Schedule Assistant API (still in development)",
       description:
-        "An API that automatically sends SMS notifications to Bakehouse employees with their weekly work schedule. Built with Java (Spring Boot) and Twilio.",
+        "An API that automatically sends SMS notifications to Bakehouse employees with their weekly work schedule. Built with Python(FastApi) and Twilio.",
       icons: [
         {
           icon: faAppStore,
