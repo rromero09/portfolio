@@ -4,27 +4,14 @@ import {
   faGithub,
   faGooglePlay,
 } from "@fortawesome/free-brands-svg-icons";
-import {} from "@fortawesome/free-solid-svg-icons";
 
 export const navigation = {
   name: "Rafael Romero",
   links: [
-    {
-      title: "About",
-      link: "#about",
-    },
-    {
-      title: "Projects",
-      link: "#projects",
-    },
-    {
-      title: "Contact",
-      link: "#contact",
-    },
-    {
-      title: "Links",
-      link: "/links",
-    },
+    { title: "About", link: "#about" },
+    { title: "Projects", link: "#projects" },
+    { title: "Contact", link: "#contact" },
+    { title: "Links", link: "/links" },
   ],
 };
 
@@ -34,13 +21,13 @@ export const work = {
     {
       title: "Web Developer | NEIU Student Media Board",
       description:
-        "Developed a fully operational Express.js server to handle frontend form submissions with proper validation and error handling. Designed a NoSQL database in MongoDB for efficient CRUD operations.",
+        "Built a full-stack Express.js server with form handling and validation. Designed a MongoDB database for CRUD operations and improved student publication workflows.",
       icons: null,
     },
     {
-      title: "IT Consultant | The Bakehouse Chicago",
+      title: "Software & Analytics Contributor | The Bakehouse Chicago",
       description:
-        "Optimized inventory management, reducing waste by 15% using data analysis. Led sales strategy meetings and built Python data visualizations from Square API metrics to boost revenue by 15%.",
+        "Created an inventory system in Notion with custom dashboards. Used Square API to automate reporting in Python, increasing revenue and reducing waste. Contributed IT support and helped scale operations from 1 to 4 stores.",
       icons: null,
     },
   ],
@@ -49,7 +36,7 @@ export const work = {
 export const intro = {
   title: "Hey, I'm Rafael",
   description:
-    "A Computer Science student passionate about building software and solving problems.",
+    "A recent Computer Science graduate passionate about backend development, data platforms, and AI-powered software solutions. I love solving real-world problems through code and continuous learning.",
   image: profile.src,
   buttons: [
     {
@@ -59,7 +46,7 @@ export const intro = {
     },
     {
       title: "Resume",
-      link: "https://docs.google.com/document/d/1DECWn_mN2xVfY2ukTULyCegvzugF9Bx3/edit?usp=sharing&ouid=101833502615017375700&rtpof=true&sd=true",
+      link: "https://docs.google.com/document/d/1DECWn_mN2xVfY2ukTULyCegvzugF9Bx3/edit?usp=sharing",
       isPrimary: false,
     },
   ],
@@ -68,9 +55,9 @@ export const intro = {
 export const about = {
   title: "Who I Am",
   description: [
-    "I'm a Computer Science student at Northeastern Illinois University, minoring in Data Science. My passion lies in backend development, data analysis, and cloud computing.",
-    "I have experience building REST APIs with Java (Spring Boot) and Python (Flask) and designing databases (NoSQL and SQL). I also enjoy frontend development with React.",
-    "Outside of coding, I stay active with hiking, mountain biking, and playing beach volleyball at Foster Beach every Friday :D",
+    "I'm a Computer Science new graduate with a focus on backend development and data infrastructure solutions",
+    "My passion lies in backend development, data infrastructure, and building cloud-native applications. I've worked with Spring Boot, FastAPI, Docker, AWS and got recently into AI wrappers such as LangChain and LangGraph.",
+    "Outside tech, I keep myself together through beach volleyball,hikes and exploring new tools that make life (and work) more efficient.",
   ],
 };
 
@@ -80,23 +67,18 @@ export const projects = {
     {
       title: "Inventory Management System",
       description:
-        "An inventory tracking app for The Bakehouse Chicago, helping staff track missing items and streamline future orders. Built with Notion.",
+        "A lightweight inventory tracking system for The Bakehouse Chicago using Notion + automation to track missing items, reduce waste, and streamline operations.",
     },
     {
-      title: "Schedule Assistant API (still in development)",
+      title: "Schedule Assistant API",
       description:
-        "An API that automatically sends SMS notifications to Bakehouse employees with their weekly work schedule. Built with Python(FastApi) and Twilio.",
-      icons: [
-        {
-          icon: faAppStore,
-          link: "placeholder",
-        },
-      ],
+        "An email notification system that sends schedules to employees. Built with FastAPI,Docker and deployed with AWS lambda.",
+      icons: [],
     },
     {
-      title: "NEIU Hack Fest 2024 - 2nd Place Winner",
+      title: "Hack Fest 2024 - 2nd Place",
       description:
-        "Collaborated on a project that helps non-English speakers and seniors access rides more easily. Integrated Speak out-loud Translate API for multilingual support, enhancing accessibility. Built using React.js and JavaScript.",
+        "Created a ride-booking assistant for non-English speakers using text-to-speech, React.js, and Google Translate API. Recognized for accessibility innovation.",
     },
   ],
 };
@@ -118,19 +100,15 @@ export const SEO = {
   title:
     "Rafael Romero | Software Developer | Java | Spring Boot | Data Science",
   description:
-    "Computer Science student specializing in backend development (Spring Boot, Flask), data analysis, and cloud computing. Passionate about solving real-world problems with software.",
+    "Computer Science graduate specializing in backend development (Spring Boot, FastAPI), data infrastructure, cloud-native tools, and automation. Passionate about solving real-world problems with software.",
   image: profile.src,
 };
 
 export const links = {
   image: profile.src,
   title: "@rafaelrarr",
-  description: "Software Developer | Data Analyst",
+  description: "Software Developer | Backend Engineer | AI & Data Enthusiast",
   cards: [
-    {
-      title: "My Website",
-      link: "placeholder",
-    },
     {
       title: "My LinkedIn",
       link: "https://linkedin.com/in/rafaelrr",
