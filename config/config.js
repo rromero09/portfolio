@@ -21,7 +21,7 @@ export const work = {
     {
       title: "Web Developer | NEIU Student Media Board",
       description:
-        "Built a full-stack Express.js server with form handling and validation. Designed a MongoDB database for CRUD operations and improved student publication workflows.",
+        "Worked on  afull-stack Express.js server with form handling and validation. Designed a MongoDB database for CRUD operations",
       icons: null,
     },
     {
@@ -72,13 +72,13 @@ export const projects = {
     {
       title: "Schedule Assistant API",
       description:
-        "An email notification system that sends schedules to employees. Built with FastAPI,Docker and deployed with AWS lambda.",
+        "An email notification system that sends schedules to employees. Built with FastAPI,Docker and deployed with AWS EC2, it automates schedule management and improves team communication.",
       icons: [],
     },
     {
       title: "Hack Fest 2024 - 2nd Place",
       description:
-        "Created a ride-booking assistant for non-English speakers using text-to-speech, React.js, and Google Translate API. Recognized for accessibility innovation.",
+        "Created a ride-booking assistant for non-English speakers using text-to-speech, React.js, and a Translate API. Recognized for accessibility innovation.",
     },
   ],
 };
@@ -98,7 +98,7 @@ export const contact = {
 
 export const SEO = {
   title:
-    "Rafael Romero | Software Developer | Java | Spring Boot | Data Science",
+    "Rafael Romero | Software Developer | Java | Python | Spring Boot| Data Science",
   description:
     "Computer Science graduate specializing in backend development (Spring Boot, FastAPI), data infrastructure, cloud-native tools, and automation. Passionate about solving real-world problems with software.",
   image: profile.src,
