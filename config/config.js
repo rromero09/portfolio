@@ -4,6 +4,7 @@ export const navigation = {
   name: "Rafael Romero",
   links: [
     { title: "About", link: "#about" },
+    { title: "Tech Stack", link: "#tech-stack" },
     { title: "Projects", link: "#projects" },
     { title: "Contact", link: "#contact" },
     { title: "Links", link: "/links" },
@@ -26,6 +27,37 @@ export const work = {
       icons: null,
     },
   ],
+};
+
+export const techStack = {
+  title: "Tech Stack",
+  technologies: [
+    {
+      name: "Next.js",
+      emoji: "⚛️",
+      color: "#000000"
+    },
+    {
+      name: "Python",
+      emoji: "🐍",
+      color: "#3776AB"
+    },
+    {
+      name: "Java",
+      emoji: "☕",
+      color: "#ED8B00"
+    },
+    {
+      name: "Docker",
+      emoji: "🐳",
+      color: "#2496ED"
+    },
+    {
+      name: "JavaScript",
+      emoji: "🟨",
+      color: "#F7DF1E"
+    }
+  ]
 };
 
 export const intro = {

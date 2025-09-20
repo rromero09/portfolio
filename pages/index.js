@@ -1,9 +1,9 @@
 import React, { Fragment } from 'react';
 import { Nav } from '../components/Navbar';
 import { Intro, About } from '../components/Intro';
-import { Skills, Projects } from '../components/Work';
+import { Skills, Projects, TechStack } from '../components/Work';
 import { Footer, Contact } from '../components/Footer';
-import { about, contact, intro, navigation, projects, SEO, work } from '../config/config';
+import { about, contact, intro, navigation, projects, SEO, work, techStack } from '../config/config';
 import { Header } from '../components/Header';
 
 export default function Home() {
@@ -27,6 +27,10 @@ export default function Home() {
       <Skills
         title={work.title}
         cards={work.cards}
+      />
+      <TechStack
+        title={techStack.title}
+        technologies={techStack.technologies}
       />
       <Projects
         title={projects.title}

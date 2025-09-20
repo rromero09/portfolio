@@ -18,9 +18,10 @@
 // $inverted-font: #FFFFFF;
 
 // bootstrap overrides 
-$primary: #365B6D;
-$secondary: #F7F7F7;
+$primary: #1B3A2A; // Much darker green
+$secondary: #0D1A0F; // Very dark background
 $light: #FFFFFF;
+$dark: #0A0F0B; // Almost black background
 
 @import url('https://fonts.googleapis.com/css2?family=Barlow:wght@400;700&display=swap');
 $font-family-sans-serif: -apple-system, 'Barlow', sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
@@ -120,6 +121,8 @@ body {
   margin: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: $dark;
+  color: $light;
 }
 
 a {
@@ -149,4 +152,130 @@ a {
 .card-image:hover {
   transform: translate(-0.5rem, -0.5rem);
   box-shadow: 2rem 2rem $primary;
+}
+
+// Dark theme enhancements
+.bg-white {
+  background-color: $secondary !important;
+  color: $light !important;
+}
+
+.bg-secondary {
+  background-color: $dark !important;
+  color: $light !important;
+}
+
+.bg-primary {
+  background-color: $primary !important;
+  color: $light !important;
+}
+
+// Enhanced project cards
+.card-work {
+  background-color: $secondary;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  transition: all 0.3s ease;
+}
+
+.card-work:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(45, 90, 61, 0.3);
+  border-color: $primary;
+}
+
+// Text color adjustments
+.text-primary {
+  color: #2E7D32 !important; // Darker green for better contrast
+}
+
+.text-dark {
+  color: $light !important;
+}
+
+.text-light {
+  color: $light !important;
+}
+
+.text-muted {
+  color: rgba(255, 255, 255, 0.7) !important;
+}
+
+// Button enhancements
+.btn-primary {
+  background-color: $primary;
+  border-color: $primary;
+  transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: #2E7D32;
+  border-color: #2E7D32;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(27, 58, 42, 0.4);
+}
+
+.btn-outline-primary {
+  color: #2E7D32;
+  border-color: #2E7D32;
+  transition: all 0.3s ease;
+}
+
+.btn-outline-primary:hover {
+  background-color: #2E7D32;
+  border-color: #2E7D32;
+  color: $light;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(27, 58, 42, 0.4);
+}
+
+// Additional enhancements
+.display-4 {
+  background: linear-gradient(135deg, #2E7D32, #1B3A2A);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.lead {
+  color: rgba(255, 255, 255, 0.8) !important;
+}
+
+// Card body enhancements
+.card-body {
+  padding: 1.5rem;
+}
+
+// Icon styling improvements
+.icon-style {
+  transition: all 0.3s ease;
+}
+
+.icon-style:hover {
+  color: #2E7D32 !important;
+  transform: scale(1.1);
+}
+
+// Tech stack styling
+.tech-card {
+  padding: 1.5rem;
+  background-color: $secondary;
+  border-radius: $card-border-radius;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transition: all 0.3s ease;
+  height: 100%;
+}
+
+.tech-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(27, 58, 42, 0.3);
+  border-color: $primary;
+}
+
+.tech-icon {
+  transition: all 0.3s ease;
+}
+
+.tech-card:hover .tech-icon {
+  transform: scale(1.1);
 }
