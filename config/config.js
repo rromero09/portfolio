@@ -73,7 +73,7 @@ export const intro = {
     },
     {
       title: "Resume",
-      link: "https://docs.google.com/document/d/1p1Gbc3IDJi6_GsUBQZhGah8LLjheXvXu/edit?usp=sharing&ouid=101833502615017375700&rtpof=true&sd=true",
+      link: "https://docs.google.com/document/d/1eUkRBavEGW7cvDwuD43r-03Rg6KTMCjuzaTRT7Qr4_I/edit?usp=sharing",
       isPrimary: false,
     },
   ],
