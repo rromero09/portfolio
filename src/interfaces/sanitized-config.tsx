@@ -100,6 +100,13 @@ export interface SanitizedPublication {
   description?: string;
 }
 
+export interface SanitizedBook {
+  title: string;
+  author?: string;
+  status?: 'reading' | 'read';
+  link?: string;
+}
+
 export interface SanitizedGoogleAnalytics {
   id?: string;
 }
@@ -127,6 +134,7 @@ export interface SanitizedThemeConfig {
 export interface SanitizedConfig {
   github: SanitizedGithub;
   projects: SanitizedProjects;
+  aboutMe?: string;
   seo: SanitizedSEO;
   social: SanitizedSocial;
   resume: SanitizedResume;
@@ -135,6 +143,7 @@ export interface SanitizedConfig {
   educations: Array<SanitizedEducation>;
   certifications: Array<SanitizedCertification>;
   publications: Array<SanitizedPublication>;
+  books: Array<SanitizedBook>;
   googleAnalytics: SanitizedGoogleAnalytics;
   hotjar: SanitizedHotjar;
   blog: SanitizedBlog;

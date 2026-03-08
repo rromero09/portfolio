@@ -56,6 +56,7 @@ export const getSanitizedConfig = (
           projects: config?.projects?.external?.projects || [],
         },
       },
+      aboutMe: config?.aboutMe || '',
       seo: {
         title: config?.seo?.title,
         description: config?.seo?.description,
@@ -105,6 +106,7 @@ export const getSanitizedConfig = (
           (item) => item.institution || item.degree || item.from || item.to,
         ) || [],
       publications: config?.publications?.filter((item) => item.title) || [],
+      books: config?.books?.filter((item) => item.title) || [],
       googleAnalytics: {
         id: config?.googleAnalytics?.id,
       },

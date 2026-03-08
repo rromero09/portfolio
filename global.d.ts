@@ -246,6 +246,13 @@ interface Publication {
   description?: string;
 }
 
+interface Book {
+  title: string;
+  author?: string;
+  status?: 'reading' | 'read';
+  link?: string;
+}
+
 interface GoogleAnalytics {
   /**
    * GA3 tracking id/GA4 tag id UA-XXXXXXXXX-X | G-XXXXXXXXXX
@@ -328,6 +335,11 @@ interface Config {
   projects?: Projects;
 
   /**
+   * About me text
+   */
+  aboutMe?: string;
+
+  /**
    * SEO config
    */
   seo?: SEO;
@@ -361,6 +373,11 @@ interface Config {
    * Publication list
    */
   publications?: Array<Publication>;
+
+  /**
+   * Book list
+   */
+  books?: Array<Book>;
 
   /**
    * Resume

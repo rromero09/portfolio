@@ -28,6 +28,8 @@ import ExternalProjectCard from './external-project-card';
 import BlogCard from './blog-card';
 import Footer from './footer';
 import PublicationCard from './publication-card';
+import BookCard from './book-card';
+import AboutCard from './about-card';
 
 /**
  * Renders the GitProfile component.
@@ -235,10 +237,22 @@ const GitProfile = ({ config }: { config: Config }) => {
                       educations={sanitizedConfig.educations}
                     />
                   )}
+                  {sanitizedConfig.books.length !== 0 && (
+                    <BookCard
+                      loading={loading}
+                      books={sanitizedConfig.books}
+                    />
+                  )}
                 </div>
               </div>
               <div className="lg:col-span-2 col-span-1">
                 <div className="grid grid-cols-1 gap-6">
+                  {sanitizedConfig.aboutMe && (
+                    <AboutCard
+                      loading={loading}
+                      aboutMe={sanitizedConfig.aboutMe}
+                    />
+                  )}
                   {sanitizedConfig.projects.github.display && (
                     <GithubProjectCard
                       header={sanitizedConfig.projects.github.header}
