@@ -157,13 +157,14 @@ const CONFIG = {
   publications: [],
   books: [
     {
-      title: 'Fundamentals of Data Engineering: Plan and Build Robust Data Systems',
+      title:
+        'Fundamentals of Data Engineering: Plan and Build Robust Data Systems',
       author: 'Joe Reis & Matt Housley',
       status: 'reading' as const,
     },
     {
-      title: '1984',
-      author: 'George Orwell',
+      title: 'Foundation',
+      author: 'Isaac Asimov',
       status: 'reading' as const,
     },
     {
@@ -172,9 +173,20 @@ const CONFIG = {
       status: 'reading' as const,
     },
     {
-      title: 'Algorithms Illuminated: Part 2: Graph Algorithms and Data Structures',
+      title:
+        'Algorithms Illuminated: Part 2: Graph Algorithms and Data Structures',
       author: 'Tim Roughgarden',
       status: 'reading' as const,
+    },
+    {
+      title: '1984',
+      author: 'George Orwell',
+      status: 'read' as const,
+    },
+    {
+      title: 'Brave New World',
+      author: 'Aldous Huxley',
+      status: 'read' as const,
     },
     {
       title: 'The Knight in Rusty Armor',
